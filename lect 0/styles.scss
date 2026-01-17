@@ -1,0 +1,276 @@
+body {
+    background-color: #fff;
+    font-family: sans-serif, Arial;
+}
+
+%hr-style {
+    border: none;              
+    height: 1px;               
+    background-color: #d2d2d2; 
+}
+ 
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%google_logo {
+    @extend %flex-center;
+    height: 30vh;
+    width: 100%;
+}
+
+#idx_logo {
+    @extend %google_logo;
+}
+
+#idx_logo_img {
+    @extend %google_logo;
+    flex-direction: column;
+     img {
+        margin-bottom: 0;
+     }
+
+     span {
+        margin-top: 0;
+        color: #4285f4;
+        font-size: 16px;
+        margin-left: 13rem;
+     }
+}
+
+nav {
+    text-align: right;
+    display: block;
+    padding-right: 11px;
+    padding-top: 12px;
+}
+
+nav > a{
+
+    display: inline-block;
+    color: rgba(0, 0, 0, .87);
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+
+%form {
+    @extend %flex-center;
+    height: 20vh;
+    width: 100%;
+    margin-left: 0.05rem;
+    margin-bottom: 9rem;
+    margin-right: 1rem;
+}
+
+.row-idx{
+    @extend %form;
+}
+
+.row-img {
+    @extend %form;
+    flex-direction: column; 
+}
+
+#adv-srch-img {
+    text-align: left;
+    padding: 1.5rem 0rem 1rem 1.5rem;
+}
+
+#adv-srch{
+    p{
+        margin: 5rem;
+        color: #d93025;
+        font-size: 20px;
+        margin: 25px;
+
+    }
+
+    hr{
+        @extend %hr-style;
+    }
+    .row-adv{
+    @extend %form;
+    flex-direction: row; 
+    margin-top: 3rem;
+    color: #222;
+    font-size: 13px;
+    justify-content: start;
+}
+
+    span, #row-adv, #adv-text-boxes {
+        padding-left: 2rem;
+    }
+
+
+}
+
+%text-input {
+    display: block;
+    height: 3rem;
+    max-width: 600px;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    font-size: 1rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    background-image: url('magnifying-glass.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 10px center; 
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(158, 160, 164, 0.28);
+    
+}
+
+#text-box, #text-box-img {
+    @extend %text-input;
+    margin-left: 1rem;
+}
+
+%Box-Shadow {
+    box-shadow: 0 3.5px 8px rgba(39, 39, 43, 0.28);
+}
+
+#text-box:hover{
+    @extend %Box-Shadow;
+}
+
+#text-box-img:hover{
+    @extend %Box-Shadow;
+}
+
+#adv-text-prompt{
+    @extend %flex-center;
+    width: 15%;
+    align-items: start;
+    flex-direction: column; 
+    gap: 1.6rem;
+}
+
+#adv-text-boxes {
+    @extend %flex-center;
+    width: 45%;
+    align-items: start;
+    flex-direction: column; 
+    gap: 1.3rem;
+
+    input {
+    width: 100%;
+    text-align: left;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    }
+}
+
+#adv-srch-btn {
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    padding: 5px;
+    width: 7rem;
+}
+
+#adv-srch-btn:hover {
+    background-image: -webkit-linear-gradient(top, #4186f5, #3676dd);
+    border: 1px solid #1d5cc0;
+
+}
+
+#adv-btn-contain{
+    @extend %flex-center;
+    margin-left: 7rem;
+    margin-top: 5rem;
+}
+
+%button {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #f8f9fa;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    font-size: 14px;
+    color: #3c4043;
+    text-align: center;
+    cursor: pointer;
+    height: 2rem;
+    width: 8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+%button:hover {
+    border: 1px solid #d5d9dc;
+    box-shadow: 0 1px 5px rgba(190, 192, 196, 0.28);
+}
+
+.btn_row {
+    @extend %button;
+}
+
+.btn_row:hover {
+   @extend %button, :hover;
+}
+
+.btn_row_contain {
+    @extend %flex-center;
+    gap: 1rem;
+}
+
+.btn-image {
+    @extend %button;
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #f7f8f9;
+
+    hr {
+    @extend %hr-style;
+    width: 90%; 
+    }
+
+    div {
+        text-align: left;
+        padding-left: 2rem;
+        color: #1f1f1f;
+        font-size: 15px;
+
+        &:first-child {
+            padding-top: 1rem;
+        }
+    }
+}
+
+#hr-foot{
+    @extend %hr-style;
+    width: 90%; 
+}
+
+#adv-foot {
+    margin-top: 5rem;
+}
+
+
+
