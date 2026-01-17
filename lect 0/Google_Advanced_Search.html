@@ -2,29 +2,56 @@
 <html lang="en">
   <head>
     <title>Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    Google_Advanced_Search
-    <nav>
+    <nav id="adv-srch-img">
       <a href="index.html"
         ><img src="Google.png" alt="Google logo" width="65"
       /></a>
     </nav>
 
-    <div>
-      Advanced Search
+    <div id="adv-srch">
+      <p>Advanced Search</p>
+      <hr />
+
+      <span>Find pages with...</span>
 
       <form action="https://www.google.com/search">
-        Find pages with...
+        <div class="row-adv">
+          <div id="adv-text-prompt">
+            <span>all these words:</span>
+            <span>this exact word or phrase: </span>
+            <span>any of these words: </span>
+            <span>none of these words: </span>
+          </div>
 
-        <div>all these words:<input type="text" name="as_q" /></div>
-        <div>
-          this exact word or phrase: <input type="text" name="as_epq" />
+          <div id="adv-text-boxes">
+            <input type="text" name="q" />
+            <input type="text" name="as_epq" />
+            <input type="text" name="as_oq" />
+            <input type="text" name="as_eq" />
+          </div>
         </div>
-        <div>any of these words: <input type="text" name="as_oq" /></div>
-        <div>none of these words: <input type="text" name="as_eq" /></div>
-        <input type="submit" value="Advanced Search" />
+
+        <hr />
+        <span id="adv-btn-contain"
+          ><input id="adv-srch-btn" type="submit" value="Advanced Search"
+        /></span>
       </form>
     </div>
+
+    <hr id="hr-foot"/>
+    <footer id="adv-foot">
+      <div>India</div>
+      <hr />
+      <div>Help</div>
+    </footer>
   </body>
 </html>
