@@ -1,4 +1,4 @@
-#CS50W Project 0: Google Search Implementation
+#CS50W Project 0:# Google Search Implementation
 This project is a front-end replica of Google Search, designed to handle user queries and redirect them to live Google results using specific GET parameters.
 
 Core Functionalities
