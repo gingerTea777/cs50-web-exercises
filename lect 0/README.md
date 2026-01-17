@@ -2,7 +2,7 @@
 This project is a front-end replica of Google Search, designed to handle user queries and redirect them to live Google results using specific GET parameters.
 
 ## Core Functionalities
-1. Main Search (`index.html`)
+** 1. Main Search (`index.html`)
 Standard Search: Accepts a query via the q parameter and redirects to Google's search results page.
 
 "I'm Feeling Lucky": Uses the btnI parameter to bypass the results page and navigate directly to the first search result.
