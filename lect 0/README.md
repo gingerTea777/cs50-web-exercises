@@ -2,19 +2,25 @@
 This project is a front-end replica of Google Search, designed to handle user queries and redirect them to live Google results using specific GET parameters.
 
 ## Core Functionalities
-* **1. Main Search** (`index.html`)
+### 1. Main Search 
+(`index.html`)
+
 * **Standard Search**: Accepts a query via the `q` parameter and redirects to Google's search results page.
 
 * **"I'm Feeling Lucky"**: Uses the `btnI` parameter to bypass the results page and navigate directly to the first search result.
 
 * **Global Navigation**: Fixed links in the upper-right corner for seamless switching between Search, Images, and Advanced Search.
 
-### 2. Image Search (`Google_Image_Search.html`)
+### 2. Image Search 
+(`Google_Image_Search.html`)
+
 * **Visual Queries**: Dedicated interface for image-specific results.
 
 * **Hidden Logic**: Implements a hidden `tbm=isch` parameter to ensure Google processes the request specifically through its image database.
 
-### 3. Advanced Search (`Google_Advanced_Search.html`)
+### 3. Advanced Search 
+(`Google_Advanced_Search.html`)
+
 * **Filtered Results**: Provides four distinct input fields to refine search results:
 
 * **All these words**: (`as_q`)
