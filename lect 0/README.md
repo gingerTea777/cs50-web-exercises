@@ -45,5 +45,5 @@ This project is a front-end replica of Google Search, designed to handle user qu
 
 3. Verify the URL includes `?q=Harvard`.
 
-4. Switch to **Advanced Search** and test the "None of these words" field to see how it appends - to your search terms.
+4. Switch to **Advanced Search** and test the "None of these words" field to see how it appends `-` to your search terms.
 
